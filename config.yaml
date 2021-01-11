@@ -29,6 +29,5 @@ spec:
       containers:
         - name: kafka-socket-consumer
           image: 10.3.2.48:5000/kafka-socket-consumer:latest
-          imagePullPolicy: Never
           ports:
             - containerPort: 8000
