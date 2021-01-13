@@ -9,7 +9,7 @@ io.on('connection', (socket) => {
 
     const topics = [
         {
-            topic: "streaming-data"
+            topic: "output"
         }
     ];
 
