@@ -1,6 +1,6 @@
 var kafka = require('kafka-node');
 const io = require('socket.io')();
-const kclient = new kafka.KafkaClient("10.244.1.24:9092,10.244.3.16:9092,10.244.1.25:9092");
+const kclient = new kafka.KafkaClient({ kafkaHost: "10.244.1.24:9092,10.244.3.16:9092,10.244.1.25:9092" });
 
 io.on('connection', (socket) => {
     socket.on('subscribeToTopic', (unit_key) => {
